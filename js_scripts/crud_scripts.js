@@ -50,7 +50,6 @@ function newRegister() {
   } else {
     new_birthdate_validation_error.style.display = "none";
     new_birthdate.style.border = "1px solid #4caf50";
-    console.log("si");
   }
 }
 
@@ -59,7 +58,7 @@ var formState = false;
 var insertion_form = document.getElementById("insertion_form");
 
 function openForm() {
-  if (formState == false) {
+  if (!formState) {
     insertion_form.style.display = "block";
     insertion_form.style.transition = "0.1s";
     formState = true;

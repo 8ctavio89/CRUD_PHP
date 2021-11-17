@@ -8,10 +8,6 @@
     $UPDATED_USERNAME = $_POST["name_update"];
     $UPDATED_LASTNAME = $_POST["lastname_update"];
     $UPDATED_BIRTHDATE = $_POST["birthdate_update"];
-
-    echo $UPDATED_USERNAME;
-    echo $UPDATED_LASTNAME;
-    echo $UPDATED_BIRTHDATE;
     
     $string_query = "UPDATE super_usuarios SET
                      nombre_susuario = $1,

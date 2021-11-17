@@ -1,7 +1,7 @@
 //User login validation.
 
 var username = document.forms["login_form"]["username"];
-var password = document.forms["login_form"]["password"];
+var pwd = document.forms["login_form"]["pwd"];
 
 var u_validation_error = document.getElementById("u_validation_error");
 var p_validation_error = document.getElementById("p_validation_error");
@@ -20,7 +20,7 @@ function validateLogInInfo() {
     username.style.border = "1px solid #4caf50";
   }
 
-  if (password.value.length < 1 || username.value.length > 100) {
+  if (pwd.value.length < 1 || username.value.length > 100) {
     p_validation_error.style.border = "1px solid red";
     u_validation_error.innerHTML =
       "Formato de contraseña incorrecto. Intenta de nuevo.";
@@ -29,7 +29,7 @@ function validateLogInInfo() {
     return false;
   } else {
     p_validation_error.style.display = "none";
-    password.style.border = "1px solid #4caf50";
+    pwd.style.border = "1px solid #4caf50";
   }
 }
 

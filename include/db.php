@@ -3,7 +3,7 @@
          private $server_host;
          private $database_name;
          private $username;
-         private $password;
+         private $p;
 
          public function __construct() {
              $this->server_host     = "ec2-52-201-72-91.compute-1.amazonaws.com";
